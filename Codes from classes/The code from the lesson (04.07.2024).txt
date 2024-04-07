@@ -1,0 +1,40 @@
+#План занятия
+#1.Переменные и типы данных
+#2.Консольный ввод и вывод
+
+#Вывод Hello world!
+print("Hello world!")
+
+#1.Переменные и типы данных
+print("1.variable and type data")
+
+a = 0       #int //integer
+b = 1.5     #float // 1 + 0.5 = 1.5
+c = True    #boolean // True = 1, False = 0
+d = 'D'     #char - символьный тип данных
+e = "Denis" #string = строка //D - e - n - i - s 
+
+#2.Консольный ввод и вывод
+print("Dopiro Nikita Viktorovich")
+print(f"{e} Mazalov")
+print(1,2,3,sep=",")#separator - разделитель
+print(f"{e} Mazalov",1,2,3,sep="")
+print(f"{e} Mazalov",1,2,3,sep=",")
+print("Denis",end=" ")
+print("mazalov")
+print("\tCtrl + K + C")#Commenting
+print("Ctrl + K + U")#Uncomment
+
+inp = int(input())#Ввод значений с kлавиатуры // int() - преобразование в целочисленное преобразование // int()-conversion to integer value
+print(type(inp))#type()-shows the data type
+
+#print("Enter your Name:",end=" ")
+Name = input("Enter your Name:")
+
+#print("Enter your Surname:",end=" ")
+Surname = input("Enter your Surname:")
+
+print(f"Привет,{Name} {Surname}")
+
+A = input()
+print(f"Size of {A} = {len(A)}")#the len() function returns the number of characters in the string.
