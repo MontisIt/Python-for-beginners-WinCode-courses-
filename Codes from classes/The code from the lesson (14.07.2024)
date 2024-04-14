@@ -1,0 +1,61 @@
+
+# План занятия
+# 1.Арифметические операции с числами
+# 2.Поразрядные операции с числами
+
+# Task 1.
+# print("1,2,3,4,5",sep="\n" )
+
+# Task 2.
+# print("1","2 2","3 3 3","4 4 4 4","5 5 5 5 5")
+
+# Task 4
+# t=input()
+# i=input()
+# r=input()
+# b=input()
+# print(t,i,r,b, sep="\n")
+
+####################################################
+
+
+name_object = "chicken"
+description_list = ["feathery", "delicious", "alive", "little","small", "bird", "not_mammal"]
+number = 0
+print("Hello, player!")
+while True:
+    number += 1  # number = number + 1
+    question = input("Input your question: ")#Is it small ?
+    question_list = question.split(" ")  # [Is,it,small,?]
+
+    check_question = False #check
+
+    for i in question_list:
+        if i in description_list:
+            print("YES")
+            check_question = True
+            break
+
+    if check_question == False:
+        print("NO")
+
+    print("Are you ready to respond ?")
+    answer = input()
+    if answer == "Yes" or answer == "YES" or answer == "yes":
+        asnwer_object = input()
+        if asnwer_object == name_object:
+            print("You guessed it!")
+            print(f"Number of attempts: {number}")
+            break;
+
+        else:
+           print("No!") 
+
+
+#######################################################################
+
+#question = input("Input your question: ")#Is it small 
+#question_list = question.split(" ")  # [Is,it,small,?]
+#print(question_list)
+#for i in range(len(question_list)):
+#    print(question_list[i])
