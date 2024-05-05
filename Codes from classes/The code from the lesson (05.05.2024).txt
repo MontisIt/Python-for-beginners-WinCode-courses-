@@ -1,0 +1,101 @@
+import math
+
+#Арифметические операции с числами
+#Условные выражения
+#Условная конструкция if elif else
+
+#Арифметические операции: +, -, *, **(степень),  /(деление), //(целочисленное деление), %(деление с остатком).
+
+
+print("Сумма: ",10 + 5)#15
+print("Минус: ",10 - 5)#5
+print("Умножение: ",10 * 5)#50
+print("Степень: ",10 ** 5)#100000
+print("Деление: ",10 / 5)#2
+print("Деление: ",math.floor(10 / 5))#2
+print("целочисленное деление: ",11 // 5) #11/5=2.2 != 11//5=2
+print("Деление с остатком: ",150 % 100) #150/100=1.50 != 150 % 100 =
+
+#Условные выражения ==, !=, >, <, >=, <=. True or False
+# a=1
+# b=2
+# a=b #a=2
+# a==b #a == b True or False
+
+print(10 == 5)#False
+print(10 != 5)#True
+print(10 > 5)#True
+print(10 < 5)#False
+print(10 >= 5)#10 or > 5 или 10 == 5 #True
+print(10 <= 5)#False
+
+print('------------------')
+line_1='Nikita'#6
+line_2='Danil'#5
+line_3='Nikita'#6
+
+print("Length of line_1: ",len(line_1))
+print("Length of line_2: ",len(line_2))
+
+print(line_1 == line_2)#False
+print(line_1 != line_2)#True
+print(line_1 > line_2)#True
+print(line_1 < line_2)#False
+print(line_1 >= line_2)#10 or > 5 или 10 == 5 #True
+print(line_1 <= line_2)#False
+
+print('------------------')
+print(line_3 in line_1)#value of  varibles
+#line_3='Nikita'#6 and line_1='Nikita'#6
+#'N'== 'N'
+#'i'== 'i'
+#'k'== 'k'
+#'i'== 'i'
+#'t'== 't'
+#'a'== 'a'
+ 
+
+#Условная конструкция if elif else
+a=10
+b=5
+if a==b:
+    print("YES")
+
+else:
+    print("NO")
+    
+
+a=10
+b=10
+if a<b:
+    if a>b:
+        print("YES a==b")
+    else:
+        print("YES a<b")
+elif a>b: #else if (условие) {значение}
+    print("YES a>b")
+elif a == b:
+    print("YES a==b")
+else:
+    print("NO")
+    
+if a>= b:
+    print("YES a>=b")
+    
+elif a==b:
+     print("YES a==b")
+
+n=int(input("Input n: "))
+
+#even: 2,4,6,8,10,...
+
+# n=3 -> 3+1=4
+# n=6 -> 6+2=8
+#n=7 -> 7 % 2 = 5 -> odd
+#n=6 -> 6 % 2 = 0 -> even
+
+if n % 2 == 0:
+    print(n+2)
+else:
+    print(n+1)
+    
